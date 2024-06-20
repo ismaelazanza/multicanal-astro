@@ -1,0 +1,22 @@
+---
+interface Props {
+	title: string;
+	horario: string;
+    nombre: string;
+}
+
+const {title, horario, nombre } = Astro.props;
+---
+
+<section class="p-8 bg-gray-900">
+    <p class="text-white uppercase text-xs">No te pierdas</p>
+    <p class="text-lime-400 font-semibold text-2xl">{title}</p>
+    <p class="text-white text-lg">{nombre}</p>
+    <p class="text-white font-semibold">{horario}</p>
+</section>
+
+<style>
+
+
+
+</style>
